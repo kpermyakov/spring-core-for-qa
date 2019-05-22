@@ -20,7 +20,7 @@ import javax.annotation.Resource;
 @PropertySource("classpath:application.properties") //TODO application.properties semantics
 public class ReportingService {
     /** TODO Refer xml config for bean declaration */
-    @Autowired Logger logger;
+    @Autowired private Logger logger;
 
     /** TODO Field VS constructor VS setter injection*/
     @Value("${marker}") private String layoutMarker; //TODO SpEL
@@ -29,6 +29,11 @@ public class ReportingService {
 
     public void setLayoutMarker(String layoutMarker) {
         this.layoutMarker = layoutMarker;
+    }
+
+    @Autowired
+    public ReportingService(AccountRepository accounts) {
+        this.accounts = accounts;
     }
 
     @PostConstruct //TODO Lifecycle semantics
