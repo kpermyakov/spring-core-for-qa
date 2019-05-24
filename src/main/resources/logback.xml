@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <property name="LOGS" value="target/logs" />
-    <include resource="org/springframework/boot/logging/logback/base.xml" />
 
     <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
