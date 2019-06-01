@@ -13,6 +13,6 @@ public class CheckingAccount extends SavingAccount {
 
     @Override
     protected boolean validate(double amount) {
-        return super.validate(amount + overdraft);
+        return super.validate(amount - overdraft);
     }
 }

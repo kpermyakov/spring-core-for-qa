@@ -261,4 +261,5 @@ Result of service1's operation call: 84
 ---
 
 # Further Reading
-[Minimal Valuable Reading List](http://tinyurl.com/skilltrekreadinglist)
+- [Spring Books](https://www.baeldung.com/spring-tutorial)
+- [Minimal Valuable Reading List](http://tinyurl.com/skilltrekreadinglist)
